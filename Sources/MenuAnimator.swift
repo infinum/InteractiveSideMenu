@@ -212,12 +212,14 @@ extension MenuInteractiveTransition {
     }
 
     private func addShadow(to view: UIView) {
+        guard options.useShadow else { return }
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 0.3
         view.layer.shadowOffset = CGSize(width: -5, height: 5)
     }
 
     private func removeShadow(from view: UIView) {
+        guard options.useShadow else { return }
         view.layer.shadowOffset = .zero
     }
 
