@@ -97,10 +97,7 @@ public struct TransitionOptions {
     /// Regular view animation options. Default value is `curveEaseInOut`.
     public var animationOptions: UIViewAnimationOptions = .curveEaseInOut
 
-    /// Defines if a shadow should be displayed behind a content view
-    public var useShadow = true
-    
-    public init(duration: TimeInterval = 0.5, contentScale: CGFloat = 0.88, visibleContentWidth: CGFloat = 56.0) {
+    public init(duration: TimeInterval = 0.5, contentScale: CGFloat = 0.86, visibleContentWidth: CGFloat = 56.0) {
         self.duration = duration
         self.contentScale = contentScale
         self.visibleContentWidth = visibleContentWidth
