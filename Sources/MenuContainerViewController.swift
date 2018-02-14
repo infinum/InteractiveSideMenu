@@ -27,7 +27,7 @@ open class MenuContainerViewController: UIViewController {
         return currentContentViewController?.preferredStatusBarStyle ?? .lightContent
     }
 
-    public private(set) weak var currentContentViewController: UIViewController?
+    public fileprivate(set) weak var currentContentViewController: UIViewController?
     fileprivate var navigationMenuTransitionDelegate: MenuTransitioningDelegate!
 
     /**
