@@ -18,6 +18,14 @@
 
 import UIKit
 
+extension MenuContainerViewController {
+    public func hackNilTransitionDelegate() {
+        // this method has been written to prevent memory leakage due to delegates being strongly referenced
+        navigationMenuTransitionDelegate = nil
+        menuViewController.navigationMenuTransitionDelegate = nil
+    }
+}
+
 /**
  Container for menu view controller.
  */
